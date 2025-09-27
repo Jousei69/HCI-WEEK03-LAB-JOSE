@@ -1,78 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Sample Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Tourism - Home</title>
 </head>
 <body>
+    <!-- Header Component -->
+    <header>
+        <h1>Japan Travel Guide</h1>
+        <p>Experience the Land of the Rising Sun</p>
+        
+        <!-- Navigation Component -->
+        <nav>
+            <h4>Site Navigation:</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#booking">Book Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main Content Area -->
+    <main>
+        <!-- Main Article Content -->
+        <article id="home">
+            <!-- Hero Section -->
+            <section>
+                <h2>Welcome to Japan - Where Tradition Meets Innovation</h2>
+                <p>Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered by the Sea of Japan to the west and extends from the Sea of Okhotsk in the north to the East China Sea and Taiwan in the south.</p>
+                <hr>
+            </section>
 
-  <main>
-    <article>
-      <h2>About My Website</h2>
-      <p>This is an example webpage using semantic HTML, a form, and a table.</p>
-    </article>
+            <!-- Destinations Section -->
+            <section id="destinations">
+                <h3>Top Destinations</h3>
+                <p>Japan offers a unique blend of ancient traditions and cutting-edge modernity, from historic temples in Kyoto to the neon-lit streets of Tokyo.</p>
+                
+                <h4>Must-Visit Places:</h4>
+                <ul>
+                    <li><strong>Tokyo:</strong> Vibrant capital city with diverse neighborhoods</li>
+                    <li><strong>Kyoto:</strong> Ancient capital with thousands of temples</li>
+                    <li><strong>Osaka:</strong> Known for its modern architecture and food scene</li>
+                    <li><strong>Hokkaido:</strong> Northern island famous for skiing and nature</li>
+                    <li><strong>Hiroshima:</strong> Peace memorial and nearby Miyajima Island</li>
+                </ul>
+                <hr>
+            </section>
 
-    <section>
-      <h2>Contact Form</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+            <!-- Culture Section -->
+            <section id="culture">
+                <h3>Rich Cultural Heritage</h3>
+                <p>Japan's culture combines influences from Asia, Europe, and North America. Traditional arts include tea ceremonies, calligraphy, and flower arranging.</p>
+                
+                <p>From the graceful movements of geisha performances to the powerful strikes of sumo wrestling, Japanese culture offers a fascinating glimpse into both ancient traditions and contemporary life.</p>
+                <hr>
+            </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <!-- Tourism Statistics Table -->
+            <section>
+                <h3>Japan Tourism Statistics</h3>
+                <table border="1">
+                    <caption>Annual Tourism Data by Region (2023)</caption>
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>International Visitors</th>
+                            <th>Domestic Tourists</th>
+                            <th>Top Attraction</th>
+                            <th>Best Season</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tokyo</td>
+                            <td>5.2 million</td>
+                            <td>15.8 million</td>
+                            <td>Senso-ji Temple</td>
+                            <td>March - May</td>
+                        </tr>
+                        <tr>
+                            <td>Kyoto</td>
+                            <td>3.8 million</td>
+                            <td>8.5 million</td>
+                            <td>Fushimi Inari Shrine</td>
+                            <td>October - November</td>
+                        </tr>
+                        <tr>
+                            <td>Osaka</td>
+                            <td>2.5 million</td>
+                            <td>7.2 million</td>
+                            <td>Osaka Castle</td>
+                            <td>April - June</td>
+                        </tr>
+                        <tr>
+                            <td>Hokkaido</td>
+                            <td>1.8 million</td>
+                            <td>5.6 million</td>
+                            <td>Sapporo Snow Festival</td>
+                            <td>December - February</td>
+                        </tr>
+                        <tr>
+                            <td>Okinawa</td>
+                            <td>1.2 million</td>
+                            <td>3.4 million</td>
+                            <td>Beautiful Beaches</td>
+                            <td>May - October</td>
+                        </tr>
+                        <tr>
+                            <td>Hiroshima</td>
+                            <td>0.9 million</td>
+                            <td>2.1 million</td>
+                            <td>Peace Memorial Park</td>
+                            <td>March - May</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>15.4 million</strong></td>
+                            <td><strong>42.6 million</strong></td>
+                            <td colspan="2"><strong>58 million total tourists</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
+            </section>
 
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male"> Male
-        <input type="radio" id="female" name="gender" value="female"> Female<br><br>
+            <!-- Tour Booking Form -->
+            <section id="booking">
+                <h3>Book Your Japanese Adventure</h3>
+                <p>Plan your perfect trip to Japan with our customized tour packages!</p>
+                
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <!-- Text Input -->
+                    <label for="fullName">Full Name *:</label><br>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br><br>
 
-        <label for="subscribe">Subscribe to newsletter:</label>
-        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+                    <!-- Email Input -->
+                    <label for="email">Email Address *:</label><br>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required><br><br>
 
-        <label for="file">Upload File:</label>
-        <input type="file" id="file" name="file"><br><br>
+                    <!-- Phone Input -->
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+81 90-1234-5678"><br><br>
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+                    <!-- Date Input -->
+                    <label for="departure">Preferred Departure Date:</label><br>
+                    <input type="date" id="departure" name="departure"><br><br>
 
-    <section>
-      <h2>Sample Table</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Activity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Monday</td>
-            <td>Study HTML</td>
-          </tr>
-          <tr>
-            <td>Tuesday</td>
-            <td>Practice CSS</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+                    <!-- Number Input -->
+                    <label for="travelers">Number of Travelers:</label><br>
+                    <input type="number" id="travelers" name="travelers" min="1" max="20" value="2"><br><br>
 
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
+                    <!-- Range Input -->
+                    <label for="budget">Budget Range (USD):</label><br>
+                    <input type="range" id="budget" name="budget" min="1000" max="10000" value="3500" step="100">
+                    <p>Current budget: $<span id="budget-value">3500</span></p>
 
+                    <!-- Radio Buttons -->
+                    <label>Tour Type *:</label><br>
+                    <input type="radio" id="cultural" name="tourType" value="cultural" required>
+                    <label for="cultural">Cultural Heritage</label><br>
+                    <input type="radio" id="adventure" name="tourType" value="adventure">
+                    <label for="adventure">Adventure & Nature</label><br>
+                    <input type="radio" id="urban" name="tourType" value="urban">
+                    <label for="urban">Urban Exploration</label><br>
+                    <input type="radio" id="culinary" name="tourType" value="culinary">
+                    <label for="culinary">Culinary Tour</label><br><br>
+
+                    <!-- Checkboxes -->
+                    <label>Preferred Destinations (Select all that apply):</label><br>
+                    <input type="checkbox" id="tokyo" name="destinations[]" value="tokyo">
+                    <label for="tokyo">Tokyo</label><br>
+                    <input type="checkbox" id="kyoto" name="destinations[]" value="kyoto">
+                    <label for="kyoto">Kyoto</label><br>
+                    <input type="checkbox" id="osaka" name="destinations[]" value="osaka">
+                    <label for="osaka">Osaka</label><br>
+                    <input type="checkbox" id="hokkaido" name="destinations[]" value="hokkaido">
+                    <label for="hokkaido">Hokkaido</label><br>
+                    <input type="checkbox" id="hiroshima" name="destinations[]" value="hiroshima">
+                    <label for="hiroshima">Hiroshima</label><br>
+                    <input type="checkbox" id="okinawa" name="destinations[]" value="okinawa">
+                    <label for="okinawa">Okinawa</label><br><br>
+
+                    <!-- Select Dropdown -->
+                    <label for="duration">Tour Duration:</label><br>
+                    <select id="duration" name="duration">
+                        <option value="">Select duration</option>
+                        <option value="3-5">3-5 days (City break)</option>
+                        <option value="6-10">6-10 days (Standard tour)</option>
+                        <option value="11-14">11-14 days (In-depth exploration)</option>
+                        <option value="15+">15+ days (Comprehensive journey)</option>
+                    </select><br><br>
+
+                    <!-- File Input -->
+                    <label for="documents">Upload Travel Documents (Optional):</label><br>
+                    <input type="file" id="documents" name="documents" accept=".pdf,.jpg,.png" multiple><br>
+                    <small>Passport copy, visa, etc. (PDF, JPG, PNG)</small><br><br>
+
+                    <!-- URL Input -->
+                    <label for="social">Social Media Profile (Optional):</label><br>
+                    <input type="url" id="social" name="social" placeholder="https://instagram.com/yourusername"><br><br>
+
+                    <!-- Color Input -->
+                    <label for="theme-color">Preferred Theme Color for Itinerary:</label><br>
+                    <input type="color" id="theme-color" name="theme-color" value="#bc002d"><br><br>
+
+                    <!-- Time Input -->
+                    <label for="contact-time">Best time to contact you:</label><br>
+                    <input type="time" id="contact-time" name="contact-time"><br><br>
+
+                    <!-- Week Input -->
+                    <label for="travel-week">Preferred travel week:</label><br>
+                    <input type="week" id="travel-week" name="travel-week"><br><br>
+
+                    <!-- Search Input -->
+                    <label for="search-activities">Search for specific activities:</label><br>
+                    <input type="search" id="search-activities" name="search-activities" placeholder="e.g., sushi making, temple visits"><br><br>
+
+                    <!-- Textarea -->
+                    <label for="special-requests">Special Requests or Preferences:</label><br>
+                    <textarea id="special-requests" name="special-requests" rows="4" cols="50" placeholder="Tell us about dietary restrictions, accessibility needs, special occasions..."></textarea><br><br>
+
+                    <!-- Hidden Inputs -->
+                    <input type="hidden" id="form-source" name="form-source" value="website">
+                    <input type="hidden" id="referral" name="referral" value="organic">
+
+                    <!-- Submit and Reset Buttons -->
+                    <input type="submit" value="Submit Booking Request">
+                    <input type="reset" value="Reset Form">
+                </form>
+                <hr>
+            </section>
+        </article>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+        <h3>Quick Travel Tips</h3>
+        <ul>
+            <li>Best time to visit: Spring (March-May) or Autumn (September-November)</li>
+            <li>Visa-free entry for many countries (up to 90 days)</li>
+            <li>Japanese Yen (JPY) is the local currency</li>
+            <li>Japanese is the official language</li>
+            <li>Remove shoes when entering traditional accommodations and some restaurants</li>
+        </ul>
+        
+        <h4>Emergency Contacts</h4>
+        <p><strong>Police:</strong> 110</p>
+        <p><strong>Medical Emergency:</strong> 119</p>
+        <p><strong>Fire Department:</strong> 119</p>
+        <p><strong>Tourist Hotline:</strong> 03-3201-3331</p>
+
+        <h4>Current Weather</h4>
+        <p>Tokyo: 18°C, Sunny</p>
+        <p>Kyoto: 16°C, Cloudy</p>
+        <p>Osaka: 17°C, Partly Cloudy</p>
+    </aside>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <hr>
+        <h3>Contact Japan Travel Guide</h3>
+        <p>Email: info@japantravel.com</p>
+        <p>Phone: +81-3-1234-5678</p>
+        <p>Address: Shinjuku Center Building, Tokyo, Japan</p>
+        
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+        
+        <p>&copy; 2025 Japan Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Budget range slider value display
+        const budgetSlider = document.getElementById('budget');
+        const budgetValue = document.getElementById('budget-value');
+        
+        budgetSlider.addEventListener('input', function() {
+            budgetValue.textContent = this.value;
+        });
+    </script>
 </body>
 </html>
